@@ -1,4 +1,4 @@
-Excerpt from task description follows.
+Excerpt from the task description follows.
 
 Trial Task: Simple BookShop API Server
 --------------------------------------
