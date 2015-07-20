@@ -1,4 +1,4 @@
-The solution is implemented in nodejs/express/mongoose,
+The solution is implemented in `nodejs`/`express`/`mongoose`,
 it has REST/json interface with authentication by username/password,
 authentication is stored in session/cookies.
 
