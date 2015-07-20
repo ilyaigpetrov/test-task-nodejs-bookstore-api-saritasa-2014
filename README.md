@@ -1,3 +1,7 @@
+The solution is implemented in nodejs/express/mongoose,
+it has REST/json interface with authentication by username/password,
+authentication is stored in session/cookies.
+
 Excerpt from the task description follows.
 
 Trial Task: Simple BookShop API Server
@@ -6,7 +10,7 @@ Trial Task: Simple BookShop API Server
 Build a simple API Server to support for a BookShop website with below requirements:
 
 + Set up database with data from pageResources/price.json file
-+ Must-have page’s features: 
++ Must-have pageâ€™s features: 
 User registration
 User login/logout
 Get book list (login require)
