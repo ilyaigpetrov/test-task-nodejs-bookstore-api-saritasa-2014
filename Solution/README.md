@@ -15,18 +15,19 @@ and then will launch the server.
 
 Environment
 -----------
-
+```javascript
 NODE_ENV=
   'development' or undefined
     CORS is allowed.
   'production'
     CORS is prohibited.
+```
 
 By default the environment is 'development'.
-
+```javascript
 NODE_DB='mongodb://some_host/some_db'
 SESSION_SECRET='secret to encrypt http sessions'
-
+```
 
 Testing
 -------
@@ -43,30 +44,31 @@ permissions.
 
 Directory Structure
 -------------------
-
+```shell
 ./  
 +-- .jshintrc // Defines code style specification for the project as a set of rules for `jshint` lint-tool.  
 +-- configs   // Application configurations  
-¦   +-- database.js   // Config the url of your mongodb.  
-¦   L-- httpServer.js // Config server, port and session secret.  
+Â¦Â Â  +-- database.js   // Config the url of your mongodb.  
+Â¦Â Â  L-- httpServer.js // Config server, port and session secret.  
 +-- Gruntfile.js // Configure tasks for 'Grunt: The JavaScript Task Runner'. Used in development for automatization the same way as makefiles.  
 +-- package.json  
 +-- README.txt  
 +-- server.js // Launch an http server and the whole application.  
 L-- src  
     +-- app  
-    ¦   +-- commons // Commonly used variables and functions. (like 'util' module in some libraries)  
-    ¦   ¦   +-- index.js  
-    ¦   ¦   L-- validators.js // Validators are used in models and for serving api requests.  
-    ¦   +-- controllers // Controllers are functioins that handle client requests ('GET url', f.e.). Express routes are used in implementation.  
-    ¦   ¦   L-- api.js // REST-like API router for the bookstore.  
-    ¦   +-- models  
-    ¦   ¦   +-- book.js  
-    ¦   ¦   L-- user.js  
-    ¦   L-- views // Currently the folder has no views as all responses to the API are plain json objects.  
+    Â¦Â Â  +-- commons // Commonly used variables and functions. (like 'util' module in some libraries)  
+    Â¦Â Â  Â¦Â Â  +-- index.js  
+    Â¦Â Â  Â¦Â Â  L-- validators.js // Validators are used in models and for serving api requests.  
+    Â¦Â Â  +-- controllers // Controllers are functioins that handle client requests ('GET url', f.e.). Express routes are used in implementation.  
+    Â¦Â Â  Â¦Â Â  L-- api.js // REST-like API router for the bookstore.  
+    Â¦Â Â  +-- models  
+    Â¦Â Â  Â¦Â Â  +-- book.js  
+    Â¦Â Â  Â¦Â Â  L-- user.js  
+    Â¦Â Â  L-- views // Currently the folder has no views as all responses to the API are plain json objects.  
     L-- tests  
         +-- api_test_page // Used for human-driven testing of the API.  
-        ¦   L-- ...  
+        Â¦Â Â  L-- ...  
         +-- data_fixture  
-        ¦   L-- price.json // Fixture used to set the DB's state before testing the API.  
+        Â¦Â Â  L-- price.json // Fixture used to set the DB's state before testing the API.  
         L-- db_populate_from_data_fixture.js // Script to set the DB's state from 'price.json'.  
+```
